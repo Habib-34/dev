@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Muhammad Habib Ullah</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="modern_portfolio.html" class="logo">Muhammad Habib Ullah</a>
+            <ul class="nav-menu">
+                <li><a href="modern_portfolio.html#home">Home</a></li>
+                <li><a href="modern_portfolio.html#about">About</a></li>
+                <li><a href="#projects" class="active">Projects</a></li>
+                <li><a href="modern_portfolio.html#contact">Contact</a></li>
+                <li><a href="#" id="navDownloadCV" onclick="downloadCV()">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Archive Section -->
+    <section class="projects archive-page" id="projects">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Projects Archive</h2>
+                <p>Explore my complete collection of projects across different technologies and domains</p>
+            </div>
+
+            <div class="projects-grid fade-in">
+                <!-- Weather App -->
+                <div class="project-card" onclick="openProject('weather-app')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=200&fit=crop"
+                            alt="Weather App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Angry Bird Game -->
+                <div class="project-card" onclick="openProject('angry-bird')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=200&fit=crop"
+                            alt="Angry Bird Game">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Angry Bird Game</h3>
+                        <p class="project-type">
+                            <span class="original-text">Game Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Real-time Chat App -->
+                <div class="project-card" onclick="openProject('chat-app')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=200&fit=crop"
+                            alt="Real-time Chat App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Real-time Chat App</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Smart Task Manager -->
+                <div class="project-card" onclick="openProject('task-manager')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop"
+                            alt="Smart Task Manager">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Smart Task Manager</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CareTrack App -->
+                <div class="project-card" onclick="openProject('caretrack')">
+                    <div class="project-image">
+                        <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/c2f57f839fea8cd40cb8ebf2af54404e-1755523643480/CareTrack%20%E2%80%93%20Labor%20Awareness%20_%20Management%20%20App.png"
+                            alt="CareTrack App Screenshots">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CareTrack - Labor Management</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- E-commerce App -->
+                <div class="project-card" onclick="openProject('ecommerce-app')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop"
+                            alt="E-commerce App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce App</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Food Delivery App -->
+                <div class="project-card" onclick="openProject('food-delivery')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=200&fit=crop"
+                            alt="Food Delivery App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Food Delivery App</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Media App -->
+                <div class="project-card" onclick="openProject('social-media')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=200&fit=crop"
+                            alt="Social Media App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Banking App -->
+                <div class="project-card" onclick="openProject('banking-app')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=200&fit=crop"
+                            alt="Banking App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Banking App</h3>
+                        <p class="project-type">
+                            <span class="original-text">Mobile Development</span>
+                            <span class="hover-text">Show Project</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                © 2025 Muhammad Habib Ullah. Built with passion and lots of code ❤️
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="src/script.js"></script>
+</body>
+
+</html>
