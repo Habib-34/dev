@@ -1,0 +1,239 @@
+/* Skills Section Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.skill-category {
+    background: var(--bg-tertiary);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px var(--shadow-light);
+}
+
+.skill-category h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.skill-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-color: transparent;
+    box-shadow: 0 10px 25px var(--shadow-medium);
+}
+
+.skill-item i {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.skill-item span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover span,
+.skill-item:hover i {
+    color: white;
+}
+
+/* Skill Category Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stats Section */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 25px var(--shadow-light);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Responsive Design */
+/* Desktop / Laptop */
+@media (max-width: 1024px) {
+    .skills-grid {
+        gap: 2.5rem;
+    }
+
+    .skill-items {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .skill-items {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .skill-item {
+        padding: 1rem 0.5rem;
+    }
+
+    .skill-item i {
+        font-size: 1.5rem;
+    }
+
+    .skill-item span {
+        font-size: 0.75rem;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 576px) {
+    .skills-grid {
+        gap: 1.5rem;
+    }
+
+    .skill-items {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 0.6rem;
+    }
+
+    .skill-item {
+        padding: 0.8rem 0.4rem;
+    }
+
+    .skill-item i {
+        font-size: 1.3rem;
+    }
+
+    .skill-item span {
+        font-size: 0.7rem;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .stat-item {
+        padding: 0.8rem;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .skill-items {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .skill-item {
+        padding: 0.6rem 0.3rem;
+    }
+
+    .skill-item i {
+        font-size: 1.2rem;
+    }
+
+    .skill-item span {
+        font-size: 0.65rem;
+        line-height: 1.2;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+.stat {
+    padding: 1.5rem 1rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+}

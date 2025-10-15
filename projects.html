@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - Muhammad Habib Ullah</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+    <!-- Custom styles for projects page -->
+    <style>
+        /* Hide navigation for projects page */
+        .navbar {
+            display: none;
+        }
+
+        /* Projects page specific styles */
+        .projects-page {
+            min-height: 100vh;
+            background: var(--bg-primary);
+            padding: 2rem 0;
+        }
+
+        /* Back button styles */
+        .back-button-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .back-button:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+
+        .back-button i {
+            font-size: 1.2rem;
+        }
+
+        /* Page title styles */
+        .projects-page-title {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .projects-page-title h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+        .projects-page-title p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin: 0.5rem 0 0 0;
+        }
+
+        /* Adjust projects grid for full page */
+        .projects-page .projects-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .projects-page-title h1 {
+                font-size: 2.5rem;
+            }
+
+            .back-button-container,
+            .projects-page-title,
+            .projects-page .projects-grid {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects-page-title h1 {
+                font-size: 2rem;
+            }
+
+            .projects-page {
+                padding: 1rem 0;
+            }
+
+            .back-button-container {
+                margin-bottom: 1rem;
+            }
+
+            .projects-page-title {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+
+    <!-- Projects Page Content -->
+    <div class="projects-page">
+        <!-- Back Button -->
+        <div class="back-button-container">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Muhammad Habib Ullah
+            </a>
+        </div>
+
+        <!-- Page Title -->
+        <div class="projects-page-title">
+            <h1>All Projects</h1>
+            <p>Explore my complete portfolio of mobile applications and software solutions</p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="all-projects-grid">
+            <!-- All project cards will be dynamically generated here -->
+        </div>
+    </div>
+
+    <!-- Load project data first -->
+    <script src="data/projects.js"></script>
+
+    <!-- Load modular JavaScript -->
+    <script src="js/cursor.js"></script>
+    <script src="js/projects.js"></script>
+
+    <!-- Initialize All Project Cards -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('🚀 DOM Content Loaded - Starting to render all projects');
+
+            // Check if ProjectsManager exists
+            if (typeof ProjectsManager !== 'undefined') {
+                console.log('✅ ProjectsManager is available');
+
+                // Initialize projects manager
+                const projectsManager = new ProjectsManager();
+
+                // Render all projects (not just featured)
+                projectsManager.renderProjects('all-projects-grid', false);
+
+                console.log('✅ All project cards rendered successfully!');
+            } else {
+                console.error('❌ ProjectsManager not found');
+            }
+
+            // Initialize cursor follower if available
+            if (typeof CursorFollower !== 'undefined') {
+                new CursorFollower();
+            }
+        });
+    </script>
+</body>
+
+</html>

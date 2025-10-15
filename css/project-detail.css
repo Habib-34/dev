@@ -1,0 +1,761 @@
+/* Project Detail Page Styles */
+
+/* Hide navigation */
+.navbar {
+    display: none;
+}
+
+/* Project Detail Page Layout */
+.project-detail-page {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    padding: 0;
+}
+
+/* Back Button Section */
+.project-back-section {
+    padding: 2rem 0 1rem 0;
+}
+
+.back-button-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.back-button:hover {
+    color: var(--accent-color);
+    transform: translateX(-5px);
+}
+
+.back-button i {
+    font-size: 1.1rem;
+}
+
+/* Project Header Section */
+.project-header-section {
+    padding: 1rem 0 2rem 0;
+}
+
+.project-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/* Project Links Section */
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px var(--shadow-medium);
+}
+
+.project-link.secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.project-link.secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Project Content Section */
+.project-content-section {
+    padding: 2rem 0;
+    background: var(--bg-secondary);
+}
+
+.project-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.project-content {
+    background: var(--bg-tertiary);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.project-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: var(--primary-color);
+}
+
+.project-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.project-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-content li {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+/* Technology Tags */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.tech-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Project Images */
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow-light);
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Comprehensive Responsive Design */
+/* Large Desktop */
+@media (max-width: 1200px) {
+
+    .project-content-container,
+    .project-header-container,
+    .project-images-container,
+    .back-button-container {
+        padding: 0 2rem;
+    }
+
+    .project-main-title {
+        font-size: 3.2rem;
+    }
+}
+
+/* Desktop / Laptop */
+@media (max-width: 1024px) {
+
+    .project-content-container,
+    .project-header-container,
+    .project-images-container,
+    .back-button-container {
+        padding: 0 1.5rem;
+    }
+
+    .project-main-title {
+        font-size: 2.8rem;
+    }
+
+    .project-content-container {
+        gap: 2.5rem;
+    }
+
+    .project-description {
+        max-width: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .project-content {
+        padding: 2rem;
+    }
+
+    .project-header-container,
+    .project-content-container,
+    .back-button-container {
+        padding: 0 1rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-link {
+        justify-content: center;
+    }
+
+    .project-main-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    .project-content-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-content-right {
+        position: static;
+        order: -1;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .technologies-list {
+        gap: 0.4rem;
+        justify-content: center;
+    }
+
+    .tech-tag {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .platform-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+    }
+
+    .platform-link {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+        min-width: auto;
+    }
+
+    .project-images-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 576px) {
+    .project-main-title {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .project-category {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1.2rem;
+    }
+
+    .technologies-section h3,
+    .platforms-section h3 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .platform-link {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.5rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+
+    .project-content-container,
+    .project-header-container,
+    .project-images-container,
+    .back-button-container {
+        padding: 0 0.75rem;
+    }
+
+    .project-main-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+    }
+
+    .project-category {
+        font-size: 0.75rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+
+    .project-content-left h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .technologies-section h3,
+    .platforms-section h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+        border-radius: 15px;
+    }
+
+    .platform-links {
+        gap: 0.4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .platform-link {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.4rem;
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+
+    .back-button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0;
+    }
+
+    .project-content-container {
+        gap: 1.5rem;
+    }
+
+    .project-image-item {
+        border-radius: 8px;
+    }
+}
+
+/* Platform Buttons Styles */
+.platform-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.platform-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    white-space: nowrap;
+}
+
+.platform-btn i {
+    font-size: 0.9rem;
+}
+
+.app-store-btn {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: white;
+    border-color: #858080;
+}
+
+.app-store-btn:hover {
+    background: linear-gradient(135deg, #333333, #555555);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.play-store-btn {
+    background: linear-gradient(135deg, #01875f, #4CAF50);
+    color: white;
+    border-color: #01875f;
+}
+
+.play-store-btn:hover {
+    background: linear-gradient(135deg, #4CAF50, #66BB6A);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+}
+
+.github-btn {
+    background: linear-gradient(135deg, #333333, #24292e);
+    color: white;
+    border-color: #333333;
+}
+
+.github-btn:hover {
+    background: linear-gradient(135deg, #24292e, #586069);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(36, 41, 46, 0.3);
+}
+
+.website-btn {
+    background: linear-gradient(135deg, #0066cc, #0080ff);
+    color: white;
+    border-color: #0066cc;
+}
+
+.website-btn:hover {
+    background: linear-gradient(135deg, #0080ff, #3399ff);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
+}
+
+/* Project Images Gallery Styles */
+.project-images-section {
+    margin: 3rem 0;
+}
+
+.project-images-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.project-images-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.project-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.project-image-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.project-image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .platform-buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .platform-btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .project-images-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-images-container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-images-container h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* CareTrack-specific styles - Project Layout */
+.project-category {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.project-main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+/* Project Content Section */
+.project-content-section {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.project-content-left h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.project-content-left .project-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0 0 1.5rem 0;
+    max-width: 65ch;
+}
+
+.platform-links-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.project-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: static;
+}
+
+.technologies-section h3,
+.platforms-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.75rem 0;
+}
+
+.technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.technologies-section .tech-tag {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    white-space: nowrap;
+}
+
+.platform-links,
+.platform-links-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.platform-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    width: fit-content;
+    min-width: fit-content;
+}
+
+.platform-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.platform-link i {
+    font-size: 1rem;
+}
+
+.platform-link.playstore:hover {
+    background: #01875f;
+}
+
+.platform-link.appstore:hover {
+    background: #007aff;
+}
+
+.platform-link.github:hover {
+    background: #333;
+}
+
+/* Enhanced Responsive Design for CareTrack Layout */
+@media (max-width: 768px) {
+    .project-main-title {
+        font-size: 2.5rem;
+    }
+
+    .project-content-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-content-right {
+        position: static;
+    }
+
+    .project-images-container {
+        padding: 0 1rem;
+    }
+
+    .platform-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-main-title {
+        font-size: 2rem;
+    }
+
+    .project-content-section,
+    .project-images-section {
+        padding: 1.5rem 0;
+    }
+}
