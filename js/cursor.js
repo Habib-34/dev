@@ -58,39 +58,39 @@ class CursorFollower {
     setupDynamicElements() {
         // Project cards
         document.addEventListener('mouseenter', (e) => {
-            if (e.target.closest('.project-card')) {
+            if (e.target && e.target.closest && e.target.closest('.project-card')) {
                 this.cursorFollower.classList.add('hover');
             }
         }, true);
 
         document.addEventListener('mouseleave', (e) => {
-            if (e.target.closest('.project-card')) {
+            if (e.target && e.target.closest && e.target.closest('.project-card')) {
                 this.cursorFollower.classList.remove('hover');
             }
         }, true);
 
         // Contact items
         document.addEventListener('mouseenter', (e) => {
-            if (e.target.closest('.contact-item')) {
+            if (e.target && e.target.closest && e.target.closest('.contact-item')) {
                 this.cursorFollower.classList.add('hover');
             }
         }, true);
 
         document.addEventListener('mouseleave', (e) => {
-            if (e.target.closest('.contact-item')) {
+            if (e.target && e.target.closest && e.target.closest('.contact-item')) {
                 this.cursorFollower.classList.remove('hover');
             }
         }, true);
 
         // Social links
         document.addEventListener('mouseenter', (e) => {
-            if (e.target.closest('.social-link')) {
+            if (e.target && e.target.closest && e.target.closest('.social-link')) {
                 this.cursorFollower.classList.add('hover');
             }
         }, true);
 
         document.addEventListener('mouseleave', (e) => {
-            if (e.target.closest('.social-link')) {
+            if (e.target && e.target.closest && e.target.closest('.social-link')) {
                 this.cursorFollower.classList.remove('hover');
             }
         }, true);

@@ -209,8 +209,32 @@ class PortfolioApp {
         });
 
         // Scroll to top on click
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Use a more robust scrolling method
+            const scrollToTop = () => {
+                const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (currentPosition > 0) {
+                    // Calculate smooth scroll with easing
+                    const scrollStep = Math.max(currentPosition / 15, 50);
+                    window.scrollTo(0, currentPosition - scrollStep);
+                    requestAnimationFrame(scrollToTop);
+                }
+            };
+
+            // Try modern approach first, fallback to custom animation
+            if ('scrollBehavior' in document.documentElement.style) {
+                try {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } catch (error) {
+                    scrollToTop();
+                }
+            } else {
+                scrollToTop();
+            }
         });
     }
 
