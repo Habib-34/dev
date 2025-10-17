@@ -111,6 +111,15 @@
     box-shadow: 0 10px 25px var(--shadow-light);
     transition: opacity 0.3s ease;
     opacity: 0;
+    overflow: hidden;
+}
+
+.floating-icon svg,
+.floating-icon img {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
 }
 
 .floating-icon:nth-child(1) {
@@ -265,7 +274,7 @@
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -437,7 +446,7 @@
     }
 
     .hero-content {
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 0 2rem;
         overflow: hidden;
         max-width: 100%;
@@ -447,21 +456,19 @@
     .hero-text {
         max-width: 100%;
         overflow: hidden;
+        order: 2;
     }
 
-    .hero-text h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-name {
-        font-size: 2.5rem;
+    .hero-text .hero-name {
+        font-size: 3.5rem !important;
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
+        line-height: 1.1;
     }
 
     .hero-title {
-        font-size: 1rem;
+        font-size: 1.4rem;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
@@ -483,6 +490,9 @@
         max-width: 100%;
         overflow: visible;
         padding: 0 1rem;
+        order: 1;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .hero-photo {
@@ -532,12 +542,20 @@
         gap: 0.8rem;
     }
 
-    .primary-btn,
-    .secondary-btn {
-        flex: 1;
-        padding: 12px 16px;
+    .primary-btn {
+        flex: 0 1 auto;
+        padding: 10px 10px 10px 14px;
         font-size: 0.85rem;
         min-width: 0;
+    }
+
+    .secondary-btn {
+        flex: 0 0 auto;
+        padding: 10px;
+        font-size: 0.85rem;
+        min-width: 0;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -549,7 +567,7 @@
     }
 
     .hero-content {
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 0 2rem;
         overflow: hidden;
         max-width: 100%;
@@ -559,25 +577,20 @@
     .hero-text {
         max-width: 100%;
         overflow: hidden;
+        order: 2;
     }
 
-    .hero-text h1 {
-        font-size: 1.8rem;
-        line-height: 1.2;
-        margin-bottom: 0.5rem;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .hero-name {
-        font-size: 2.1rem;
+    .hero-text .hero-name {
+        font-size: 3rem !important;
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
     }
 
     .hero-title {
-        font-size: 0.95rem;
+        font-size: 1.3rem;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
@@ -602,6 +615,9 @@
         max-width: 100%;
         overflow: visible;
         padding: 0 1rem;
+        order: 1;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .hero-photo {
@@ -647,12 +663,20 @@
         gap: 0.6rem;
     }
 
-    .primary-btn,
-    .secondary-btn {
-        flex: 1;
-        padding: 10px 12px;
+    .primary-btn {
+        flex: 0 1 auto;
+        padding: 9px 8px 9px 12px;
         font-size: 0.8rem;
         min-width: 0;
+    }
+
+    .secondary-btn {
+        flex: 0 0 auto;
+        padding: 9px;
+        font-size: 0.8rem;
+        min-width: 0;
+        width: 38px;
+        height: 38px;
     }
 }
 

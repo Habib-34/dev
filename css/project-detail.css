@@ -73,7 +73,7 @@
 }
 
 .project-description {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: 2rem;
@@ -151,6 +151,7 @@
 }
 
 .project-content p {
+    font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: 1.5rem;
@@ -229,7 +230,7 @@
     .project-header-container,
     .project-images-container,
     .back-button-container {
-        padding: 0 1.5rem;
+        padding: 0 2rem;
     }
 
     .project-main-title {
@@ -258,7 +259,7 @@
     .project-header-container,
     .project-content-container,
     .back-button-container {
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
 
     .project-links {
@@ -286,7 +287,7 @@
     }
 
     .project-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.6;
         margin-bottom: 1.5rem;
     }
@@ -321,6 +322,14 @@
 
 /* Mobile Landscape */
 @media (max-width: 576px) {
+
+    .project-content-container,
+    .project-header-container,
+    .project-images-container,
+    .back-button-container {
+        padding: 0 2rem;
+    }
+
     .project-main-title {
         font-size: 2.2rem;
         margin-bottom: 0.8rem;
@@ -365,7 +374,7 @@
     .project-header-container,
     .project-images-container,
     .back-button-container {
-        padding: 0 0.75rem;
+        padding: 0 2rem;
     }
 
     .project-main-title {

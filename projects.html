@@ -85,7 +85,7 @@
         }
 
         .projects-page-title p {
-            font-size: 1.2rem;
+            font-size: 0.95rem;
             color: var(--text-secondary);
             margin: 0.5rem 0 0 0;
         }
@@ -106,13 +106,28 @@
             .back-button-container,
             .projects-page-title,
             .projects-page .projects-grid {
-                padding: 0 1rem;
+                padding: 0 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .back-button-container,
+            .projects-page-title,
+            .projects-page .projects-grid {
+                padding: 0 2rem;
             }
         }
 
         @media (max-width: 480px) {
             .projects-page-title h1 {
                 font-size: 2rem;
+            }
+
+            .back-button-container,
+            .projects-page-title,
+            .projects-page .projects-grid {
+                padding: 0 2rem;
             }
 
             .projects-page {
@@ -189,6 +204,15 @@
             }
         });
     </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                © 2025 Muhammad Habib Ullah. Built with passion and lots of code ❤️
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -66,12 +66,32 @@
     border-radius: 12px;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .timeline-content:hover {
     transform: translateY(-3px);
     border-color: var(--primary-color);
     box-shadow: 0 10px 25px var(--shadow-light);
+}
+
+/* Remove hover effect on touch devices */
+@media (hover: none) {
+    .timeline-content {
+        transition: all 1s ease;
+    }
+
+    .timeline-content:hover {
+        transform: none;
+        border-color: var(--border-color);
+        box-shadow: none;
+    }
+
+    .timeline-content:active {
+        transform: scale(0.97);
+        border-color: var(--primary-color);
+        transition: all 0s ease;
+    }
 }
 
 .timeline-content h4 {
@@ -113,6 +133,7 @@
     .education-experience-container {
         grid-template-columns: 1fr;
         gap: 2rem;
+        padding: 0 2rem;
     }
 
     .timeline::before {
