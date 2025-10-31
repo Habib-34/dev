@@ -283,7 +283,6 @@
 
     .project-content-right {
         position: static;
-        order: -1;
     }
 
     .project-description {
@@ -328,6 +327,11 @@
     .project-images-container,
     .back-button-container {
         padding: 0 2rem;
+    }
+
+    .project-content-right {
+        order: 2;
+        margin-top: 0.5rem;
     }
 
     .project-main-title {

@@ -44,8 +44,8 @@ class PortfolioApp {
     async initModules() {
         try {
             // Initialize Navigation
-            if (typeof Navigation !== 'undefined') {
-                this.modules.navigation = new Navigation();
+            if (typeof NavigationManager !== 'undefined') {
+                this.modules.navigation = new NavigationManager();
             }
 
             // Initialize Animation Manager

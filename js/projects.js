@@ -88,13 +88,16 @@ class ProjectsManager {
         // Project URLs mapping - individual project pages are in projects folder
         const projectUrls = {
             'weather-app': 'projects/weather-app.html',
-            'angry-bird': 'projects/angry-bird.html',
             'chat-app': 'projects/chat-app.html',
-            'task-manager': 'projects/task-manager.html',
-            'caretrack': 'projects/caretrack.html',
-            'ecommerce-app': 'projects/ecommerce-app.html',
-            'food-delivery': 'projects/food-delivery.html',
-            'social-media': 'projects/social-media.html'
+            'to-do-list': 'projects/to-do-list.html',
+            'restaurant-booking': 'projects/restaurant-booking.html',
+            'dictionary-app': 'projects/dictionary-app.html',
+            'bitcoin-ticker': 'projects/bitcoin-ticker.html',
+            'bmi-calculator': 'projects/bmi-calculator.html',
+            'quizzler': 'projects/quizzler.html',
+            'xylophone': 'projects/xylophone.html',
+            'dicee': 'projects/dicee.html',
+            'angry-birds': 'projects/angry-birds.html'
         };
 
         const url = projectUrls[projectId];

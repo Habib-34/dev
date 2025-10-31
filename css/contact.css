@@ -41,6 +41,7 @@
     cursor: default;
     position: relative;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Make clickable contact items fully interactive */
@@ -64,6 +65,51 @@
     border-color: var(--primary-color);
     box-shadow: 0 10px 25px var(--shadow-light);
     transform: translateX(10px);
+}
+
+/* Remove hover effect on touch devices */
+@media (hover: none) {
+    .contact-item {
+        transition: all 1s ease;
+    }
+
+    .contact-item:hover {
+        transform: none;
+        border-color: var(--border-color);
+        box-shadow: none;
+    }
+
+    .contact-item:active {
+        transform: scale(0.97);
+        border-color: var(--primary-color);
+        transition: all 0s ease;
+    }
+
+    .contact-item[style*="cursor: pointer"] {
+        transition: all 1s ease;
+    }
+
+    .contact-item[style*="cursor: pointer"]:hover {
+        transform: none;
+        border-color: var(--border-color);
+        box-shadow: none;
+        background: var(--bg-tertiary);
+    }
+
+    .contact-item[style*="cursor: pointer"]:active {
+        transform: scale(0.97);
+        border-color: var(--primary-color);
+        transition: all 0s ease;
+    }
+
+    .contact-item[style*="cursor: pointer"]:hover .contact-item-icon {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .contact-item[style*="cursor: pointer"]:hover .contact-item-content h4 {
+        color: var(--text-primary);
+    }
 }
 
 /* Enhanced hover effects for clickable items */

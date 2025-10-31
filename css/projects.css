@@ -24,12 +24,36 @@
     position: relative;
     cursor: pointer;
     height: 300px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
     box-shadow: 0 25px 50px rgba(0, 212, 255, 0.2);
+}
+
+/* Remove hover effect on touch devices */
+@media (hover: none) {
+    .project-card {
+        transition: all 1s ease;
+    }
+
+    .project-card:hover {
+        transform: none;
+        border-color: var(--border-color);
+        box-shadow: none;
+    }
+
+    .project-card:active {
+        transform: scale(0.97);
+        border-color: var(--primary-color);
+        transition: all 0s ease;
+    }
+
+    .project-card:hover .project-image img {
+        transform: none;
+    }
 }
 
 .project-image {

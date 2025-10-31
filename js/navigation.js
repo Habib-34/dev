@@ -1,5 +1,5 @@
 // Navigation Module
-class Navigation {
+class NavigationManager {
     constructor() {
         this.navbar = document.querySelector('.navbar');
         this.navLinks = document.querySelectorAll('.nav-menu a');

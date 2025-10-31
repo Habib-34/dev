@@ -1,81 +1,13 @@
 // Projects Data Configuration
 const projectsData = [
     {
-        id: 'weather-app',
-        title: 'Weather Forecast App',
-        type: 'Mobile App Development',
-        description: 'Real-time weather app providing comprehensive weather data with 7-day forecasts and interactive maps. Features beautiful animations and smooth transitions that enhance user experience. Built with Flutter and OpenWeatherMap API to deliver accurate weather information across multiple global locations.',
-        technologies: ['Flutter', 'Dart', 'REST API', 'Provider', 'Geolocator'],
-        platforms: {
-            'iOS': 'https://apps.apple.com/app/weather-forecast',
-            'Android': 'https://play.google.com/store/apps/details?id=com.weather.app',
-            'Visit Website': 'https://your-weather-app.netlify.app',
-            'GitHub': 'https://github.com/your-username/weather-app'
-        },
-        images: {
-            thumbnail: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
-            gallery: [
-                'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1504608616709-0199ae38b9c6?w=800&h=600&fit=crop&auto=format&q=80'
-            ]
-        },
-        featured: true
-    },
-    {
-        id: 'caretrack',
-        title: 'CareTrack - Health Monitoring',
-        type: 'Healthcare App Development',
-        description: 'Comprehensive healthcare management app designed for tracking medications, medical appointments, and vital health metrics. Features secure end-to-end encryption and family sharing capabilities for coordinated care. Built with Firebase backend providing real-time synchronization and biometric authentication for enhanced security.',
-        technologies: ['Flutter', 'Firebase', 'Bloc', 'Local Notifications', 'Biometrics'],
-        platforms: {
-            'iOS': 'https://apps.apple.com/app/caretrack-health',
-            'Android': 'https://play.google.com/store/apps/details?id=com.caretrack.health',
-            'Visit Website': 'https://caretrack-demo.netlify.app',
-            'GitHub': 'https://github.com/your-username/caretrack-app'
-        },
-        images: {
-            thumbnail: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/c2f57f839fea8cd40cb8ebf2af54404e-1755523643480/CareTrack%20%E2%80%93%20Labor%20Awareness%20_%20Management%20%20App.png',
-            gallery: [
-                'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop&auto=format&q=80'
-            ]
-        },
-        featured: true
-    },
-    {
-        id: 'angry-bird',
-        title: 'Angry Bird Game',
-        type: 'Game Development',
-        description: 'Physics-based puzzle game featuring realistic destruction mechanics and multiple unique bird types with special abilities. Built with Unity game engine incorporating custom physics simulations and progressively challenging levels. Includes cloud save functionality and comprehensive analytics for tracking player progress and achievements.',
-        technologies: ['Unity', 'C#', 'Physics Engine', '2D Graphics', 'Game Analytics'],
-        platforms: {
-            'Android': 'https://play.google.com/store/apps/details?id=com.angrybird.game',
-            'iOS': 'https://apps.apple.com/app/angry-bird-game',
-            'Visit Website': 'https://angry-bird-game.netlify.app',
-            'GitHub': 'https://github.com/your-username/angry-bird-game'
-        },
-        images: {
-            thumbnail: 'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
-            gallery: [
-                'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=600&fit=crop&auto=format&q=80'
-            ]
-        },
-        featured: true
-    },
-    {
         id: 'chat-app',
-        title: 'Real-Time Chat App',
+        title: 'WhatsApp Clone',
         type: 'Mobile App Development',
-        description: 'Modern real-time messaging application with end-to-end encryption ensuring secure communication between users. Features comprehensive group chat functionality, multimedia file sharing, and integrated voice/video calling capabilities. Built with Flutter and Firebase to provide instant message delivery and seamless cross-platform synchronization.',
-        technologies: ['Flutter', 'Firebase', 'WebSocket', 'Encryption'],
+        description: 'A feature-rich WhatsApp clone application that replicates the core messaging experience. Features include real-time messaging, group chats, multimedia sharing (images, videos, documents), voice messages, and message status indicators. Built with Flutter and Firebase for seamless real-time communication with end-to-end encryption support.',
+        technologies: ['Flutter', 'Dart', 'Firebase', 'Cloud Firestore', 'Firebase Auth', 'Firebase Storage'],
         platforms: {
-            'iOS': 'https://apps.apple.com/app/realtime-chat',
-            'Android': 'https://play.google.com/store/apps/details?id=com.chat.realtime',
-            'GitHub': 'https://github.com/your-username/realtime-chat-app'
+            'GitHub': 'https://github.com/Habib-34/whatsapp-clone'
         },
         images: {
             thumbnail: 'https://images.unsplash.com/photo-1611746869696-d09bce200020?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
@@ -88,15 +20,13 @@ const projectsData = [
         featured: true
     },
     {
-        id: 'task-manager',
-        title: 'Task Management App',
-        type: 'Productivity App',
-        description: 'Powerful task management application designed for both individual productivity and team collaboration workflows. Features comprehensive project organization, intelligent deadline reminders, and detailed progress tracking systems. Built with Flutter and SQLite providing robust offline functionality and seamless data synchronization across all devices.',
-        technologies: ['Flutter', 'SQLite', 'Provider', 'Local Notifications'],
+        id: 'to-do-list',
+        title: 'To-Do List App',
+        type: 'Mobile App Development',
+        description: 'A simple and elegant To-Do List application with integrated calendar functionality for better task management. Features include task creation with titles and descriptions, calendar view to organize tasks by date, task completion tracking, and the ability to view upcoming tasks. Built with Flutter for a clean and intuitive user experience with local data persistence.',
+        technologies: ['Flutter', 'Dart', 'SQLite', 'Provider', 'Table Calendar'],
         platforms: {
-            'iOS': 'https://apps.apple.com/app/task-manager-pro',
-            'Android': 'https://play.google.com/store/apps/details?id=com.taskmanager.pro',
-            'GitHub': 'https://github.com/your-username/task-manager-app'
+            'GitHub': 'https://github.com/Habib-34/Todo-List'
         },
         images: {
             thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
@@ -109,36 +39,13 @@ const projectsData = [
         featured: true
     },
     {
-        id: 'ecommerce-app',
-        title: 'E-Commerce Mobile App',
-        type: 'E-Commerce Development',
-        description: 'Full-featured e-commerce application providing seamless online shopping experience with comprehensive product catalog and advanced filtering options. Features secure shopping cart functionality, integrated payment gateways, and real-time order tracking system. Built with Flutter and Firebase offering user review systems, wishlist management, and personalized shopping recommendations.',
-        technologies: ['Flutter', 'Firebase', 'Stripe API', 'Provider'],
+        id: 'restaurant-booking',
+        title: 'Restaurant Booking App',
+        type: 'Mobile App Development',
+        description: 'A straightforward restaurant booking application that allows users to browse restaurants, view available time slots, and make reservations. Features include restaurant listings with details, date and time selection for bookings, reservation management, and booking confirmation. Built with Flutter to provide a smooth booking experience for dining out.',
+        technologies: ['Flutter', 'Dart', 'Firebase', 'Google Maps API'],
         platforms: {
-            'iOS': 'https://apps.apple.com/app/ecommerce-mobile',
-            'Android': 'https://play.google.com/store/apps/details?id=com.ecommerce.mobile',
-            'GitHub': 'https://github.com/your-username/ecommerce-app'
-        },
-        images: {
-            thumbnail: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
-            gallery: [
-                'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1556742111-f7c7f4650686?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&auto=format&q=80'
-            ]
-        },
-        featured: false
-    },
-    {
-        id: 'food-delivery',
-        title: 'Food Delivery App',
-        type: 'Food Delivery Platform',
-        description: 'Comprehensive food delivery platform seamlessly connecting hungry customers with their favorite local restaurants through intuitive mobile interface. Features real-time GPS order tracking, accurate delivery time estimation, and integrated payment systems supporting multiple payment methods. Includes customer review system, promotional offers management, and loyalty rewards program to enhance user engagement.',
-        technologies: ['Flutter', 'Google Maps API', 'Firebase', 'Payment Gateways'],
-        platforms: {
-            'iOS': 'https://apps.apple.com/app/food-delivery-pro',
-            'Android': 'https://play.google.com/store/apps/details?id=com.fooddelivery.pro',
-            'GitHub': 'https://github.com/your-username/food-delivery-app'
+            'GitHub': 'https://github.com/Habib-34/Restaurant-Booking-App'
         },
         images: {
             thumbnail: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
@@ -148,25 +55,156 @@ const projectsData = [
                 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&auto=format&q=80'
             ]
         },
+        featured: true
+    },
+    {
+        id: 'weather-app',
+        title: 'Weather Forecast App',
+        type: 'Mobile App Development',
+        description: 'Real-time weather app providing comprehensive weather data with 7-day forecasts and interactive maps. Features beautiful animations and smooth transitions that enhance user experience. Built with Flutter and OpenWeatherMap API to deliver accurate weather information across multiple global locations.',
+        technologies: ['Flutter', 'Dart', 'REST API', 'Provider', 'Geolocator'],
+        platforms: {
+            'GitHub': 'https://github.com/Habib-34/Weather-UI'
+        },
+        images: {
+            thumbnail: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            gallery: [
+                'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1504608616709-0199ae38b9c6?w=800&h=600&fit=crop&auto=format&q=80'
+            ]
+        },
+        featured: true
+    },
+    {
+        id: 'dictionary-app',
+        title: 'Dictionary App',
+        type: 'Mobile App Development',
+        description: 'A simple dictionary application that helps users look up word definitions, pronunciations, and examples. Features include word search functionality, detailed definitions with parts of speech, pronunciation audio, example sentences, and word history tracking. Built with Flutter and integrated with dictionary API for accurate and comprehensive word information.',
+        technologies: ['Flutter', 'Dart', 'REST API', 'Provider'],
+        platforms: {
+            'GitHub': 'https://github.com/Habib-34/dictionary-app'
+        },
+        images: {
+            thumbnail: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            gallery: [
+                'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1589998059171-988d887df646?w=800&h=600&fit=crop&auto=format&q=80'
+            ]
+        },
         featured: false
     },
     {
-        id: 'social-media',
-        title: 'Social Media App',
-        type: 'Social Networking Platform',
-        description: 'Feature-rich social media platform enabling users to connect, share, and engage with their communities through various interactive features. Supports multimedia post creation, real-time news feed updates, and comprehensive direct messaging system with group chat capabilities. Built with advanced privacy controls, content moderation tools, and live story features for enhanced social interaction.',
-        technologies: ['Flutter', 'Firebase', 'WebSocket', 'Cloud Storage'],
+        id: 'bitcoin-ticker',
+        title: 'Bitcoin Ticker App',
+        type: 'Mobile App Development',
+        description: 'A cryptocurrency price tracking application that displays real-time Bitcoin and other cryptocurrency rates in different national currencies. Features include live price updates, multiple cryptocurrency support (Bitcoin, Ethereum, Litecoin), currency conversion to various fiat currencies, and price change indicators. Built with Flutter and cryptocurrency API for accurate market data.',
+        technologies: ['Flutter', 'Dart', 'REST API', 'Provider'],
         platforms: {
-            'iOS': 'https://apps.apple.com/app/social-media-connect',
-            'Android': 'https://play.google.com/store/apps/details?id=com.socialmedia.connect',
-            'GitHub': 'https://github.com/your-username/social-media-app'
+            'GitHub': 'https://github.com/Habib-34/bitcoin-ticker'
         },
         images: {
-            thumbnail: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            thumbnail: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
             gallery: [
-                'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800&h=600&fit=crop&auto=format&q=80',
-                'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&h=600&fit=crop&auto=format&q=80'
+                'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=800&h=600&fit=crop&auto=format&q=80'
+            ]
+        },
+        featured: false
+    },
+    {
+        id: 'bmi-calculator',
+        title: 'BMI Calculator',
+        type: 'Mobile App Development',
+        description: 'A simple and intuitive BMI (Body Mass Index) calculator app that helps users calculate their body mass index based on height and weight. Features include easy input for height and weight, instant BMI calculation, BMI category classification (Underweight, Normal, Overweight, Obese), and health recommendations. Built with Flutter for a clean and user-friendly interface.',
+        technologies: ['Flutter', 'Dart'],
+        platforms: {
+            'GitHub': 'https://github.com/Habib-34/bmi-calculator'
+        },
+        images: {
+            thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            gallery: [
+                'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&h=600&fit=crop&auto=format&q=80'
+            ]
+        },
+        featured: false
+    },
+    {
+        id: 'quizzler',
+        title: 'Quizzler – True/False Quiz App',
+        type: 'Mobile App Development',
+        description: 'A fun and interactive True/False quiz application that tests users\' general knowledge across various topics. Features include a collection of true/false questions, instant answer feedback, score tracking, progress bar showing quiz completion, and the ability to restart the quiz. Built with Flutter using object-oriented programming principles for clean code architecture.',
+        technologies: ['Flutter', 'Dart', 'OOP'],
+        platforms: {
+            'GitHub': 'https://github.com/Habib-34/quizzler-app'
+        },
+        images: {
+            thumbnail: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            gallery: [
+                'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop&auto=format&q=80'
+            ]
+        },
+        featured: false
+    },
+    {
+        id: 'xylophone',
+        title: 'Xylophone App',
+        type: 'Mobile App Development',
+        description: 'A simple and colorful xylophone musical instrument app that allows users to play music by tapping on colorful bars. Features include 7 different musical notes corresponding to xylophone bars, vibrant and intuitive UI design, instant sound playback on tap, and responsive touch interactions. Built with Flutter and audio player package for realistic xylophone sounds.',
+        technologies: ['Flutter', 'Dart', 'AudioPlayers'],
+        platforms: {
+            'GitHub': 'https://github.com/Habib-34/xylophone-app'
+        },
+        images: {
+            thumbnail: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            gallery: [
+                'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&h=600&fit=crop&auto=format&q=80'
+            ]
+        },
+        featured: false
+    },
+    {
+        id: 'dicee',
+        title: 'Dicee App',
+        type: 'Mobile App Development',
+        description: 'A fun dice rolling application that displays two dice and rolls them with random results. Features include dual dice display, random number generation (1-6) for each die, shake or tap to roll functionality, and history tracking showing the last 3 roll results. Built with Flutter for smooth animations and an engaging user experience perfect for games and decision making.',
+        technologies: ['Flutter', 'Dart', 'Random'],
+        platforms: {
+            'GitHub': 'https://github.com/Habib-34/dicee-app'
+        },
+        images: {
+            thumbnail: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            gallery: [
+                'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?w=800&h=600&fit=crop&auto=format&q=80'
+            ]
+        },
+        featured: false
+    },
+    {
+        id: 'angry-birds',
+        title: 'Angry Birds Game',
+        type: 'Game Development',
+        description: 'A classic physics-based Angry Birds game built with JavaFX featuring an interactive start screen with 3-4 selectable levels. Each level presents a unique challenge where players launch various types of birds to hit and destroy pig structures. The game includes realistic physics simulation for projectile motion, collision detection, destructible obstacles, and score tracking. Features a polished UI with level selection menu, pause/resume functionality, and smooth animations for an engaging gameplay experience.',
+        technologies: ['Java', 'JavaFX', 'Physics Engine', 'OOP', 'Game Design'],
+        platforms: {
+            'GitHub': 'https://github.com/Habib-34/angry-birds-javafx'
+        },
+        images: {
+            thumbnail: 'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=400&h=300&fit=crop&crop=focalpoint&auto=format&q=80',
+            gallery: [
+                'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&h=600&fit=crop&auto=format&q=80',
+                'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=600&fit=crop&auto=format&q=80'
             ]
         },
         featured: false

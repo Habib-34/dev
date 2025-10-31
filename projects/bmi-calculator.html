@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery App - Muhammad Habib Ullah</title>
+    <title>BMI Calculator - Muhammad Habib Ullah</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="../images/fav-icon.svg">
@@ -19,7 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Modular CSS Files -->
+    <!-- Modular CSS -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/cursor.css">
     <link rel="stylesheet" href="../css/navigation.css">
@@ -37,7 +37,6 @@
         </div>
     </div>
 
-    <!-- External JavaScript -->
     <!-- Data Files -->
     <script src="../data/projects.js"></script>
 
@@ -49,7 +48,7 @@
     <!-- Initialize Project Detail Page -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            console.log('🚀 Loading Food Delivery App project details...');
+            console.log('🚀 Loading BMI Calculator project details...');
 
             // Initialize Cursor Follower
             if (typeof CursorFollower !== 'undefined') {
@@ -57,17 +56,16 @@
                 console.log('✅ Cursor Follower initialized');
             }
 
-            // Check if renderProjectDetailPage function exists
-            if (typeof renderProjectDetailPage === 'function') {
-                console.log('✅ renderProjectDetailPage function is available');
-
-                // Render Food Delivery App project details
-                renderProjectDetailPage('food-delivery', 'project-detail-container');
-
-                console.log('✅ Food Delivery App project details rendered successfully!');
-            } else {
-                console.error('❌ renderProjectDetailPage function not found');
-            }
+            // Wait for scripts to load then render project
+            setTimeout(() => {
+                if (typeof renderProjectDetailPage === 'function') {
+                    console.log('✅ renderProjectDetailPage function is available');
+                    renderProjectDetailPage('bmi-calculator', 'project-detail-container');
+                    console.log('✅ BMI Calculator project details rendered successfully!');
+                } else {
+                    console.error('❌ renderProjectDetailPage function not found');
+                }
+            }, 100);
         });
     </script>
 
